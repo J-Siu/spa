@@ -30,10 +30,6 @@ import (
 	"github.com/go-rod/rod"
 )
 
-type IProcessor interface {
-	Run(loadUrl bool, checkURL bool, scrollMax int) IProcessor
-}
-
 // SPA Processor
 type Processor struct {
 	*basetype.Base
@@ -150,7 +146,7 @@ func (p *Processor) initFunc() {
 	}
 }
 
-func (p *Processor) Run(loadUrl bool, checkURL bool, scrollMax int) IProcessor {
+func (p *Processor) Run(loadUrl bool, checkURL bool, scrollMax int) {
 	// prefix := p.MyType + ".Run"
 	state := new(RunState).New()
 	p.V000_LoadPage(p.Url, loadUrl, checkURL)
@@ -231,10 +227,9 @@ func (p *Processor) Run(loadUrl bool, checkURL bool, scrollMax int) IProcessor {
 
 		ezlog.TraceP(state.String()) // Trace level log
 	}
-	return p
 }
 
-func (p *Processor) ElementScroll(element *rod.Element, scrollOffset int, scrollSleep int) IProcessor {
+func (p *Processor) ElementScroll(element *rod.Element, scrollOffset int, scrollSleep int) {
 	prefix := p.MyType + ".ElementScroll"
 	ezlog.Trace(prefix + ": Start")
 	if element != nil {
@@ -245,5 +240,4 @@ func (p *Processor) ElementScroll(element *rod.Element, scrollOffset int, scroll
 		ezlog.Trace(prefix + ": MustWaitDOMStable: End")
 	}
 	ezlog.Trace(prefix + ": End")
-	return p
 }
