@@ -38,8 +38,8 @@ type Processor struct {
 	InfoList        []IInfo
 	InfoListEnabled bool
 	PageP           *rod.Page
-	ScrollOffset    int // TODO: maybe not required
-	ScrollSleep     int // TODO: maybe not required
+	ScrollOffset    float64 // TODO: maybe not required
+	ScrollSleep     int     // TODO: maybe not required
 	Url             string
 
 	// IProcess                   func(loadUrl bool, checkURL bool, scrollMax int)
@@ -229,12 +229,13 @@ func (p *Processor) Run(loadUrl bool, checkURL bool, scrollMax int) {
 	}
 }
 
-func (p *Processor) ElementScroll(element *rod.Element, scrollOffset int, scrollSleep int) {
+func (p *Processor) ElementScroll(element *rod.Element, scrollOffset float64, scrollSleep int) {
 	prefix := p.MyType + ".ElementScroll"
 	ezlog.Trace(prefix + ": Start")
 	if element != nil {
 
 		element.MustScrollIntoView()
+		// p.PageP.Mouse.MustScroll(0, p.ScrollOffset)
 		ezlog.Trace(prefix + ": MustWaitDOMStable: Start")
 		p.PageP.MustWaitDOMStable()
 		ezlog.Trace(prefix + ": MustWaitDOMStable: End")
