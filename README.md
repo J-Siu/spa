@@ -6,6 +6,9 @@ A Single Page App processor using [go-rod/rod](https://github.com/go-rod/rod)
 
 - v0.0.1
   - Initial commit
+- v0.0.2
+  - cleanup
+  - ScrollOffset use float64
 
 ### License
 
