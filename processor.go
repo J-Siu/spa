@@ -93,10 +93,12 @@ func (p *Processor) initFunc() {
 			if loadUrl {
 				ezlog.Debug(prefix + ": urlStr: " + urlStr)
 				p.Err = p.PageP.Navigate(urlStr)
+				ezlog.Trace(prefix + ": MustWaitDOMStable: Start")
+				p.PageP.MustWaitDOMStable()
+				ezlog.Trace(prefix + ": MustWaitDOMStable: Start")
 			}
 			p.ErrHandler(prefix)
 		}
-		p.PageP.MustWaitDOMStable()
 		ezlog.Trace(prefix + ": End")
 	}
 	p.V010_ElementsContainer = func() *rod.Element {
