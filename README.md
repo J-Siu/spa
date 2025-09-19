@@ -11,6 +11,8 @@ A Single Page App processor using [go-rod/rod](https://github.com/go-rod/rod)
   - ScrollOffset use float64
 - v0.0.3
   - update ezlog
+- v0.0.4
+  - V000_LoadPage only wait if loading page
 
 ### License
 
