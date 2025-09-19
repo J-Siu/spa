@@ -4,7 +4,7 @@ go 1.25.1
 
 require (
 	github.com/J-Siu/basetype v0.0.1
-	github.com/J-Siu/ezlog v0.0.1
+	github.com/J-Siu/ezlog v0.0.4
 	github.com/go-rod/rod v0.116.2
 )
 

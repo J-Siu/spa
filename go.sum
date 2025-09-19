@@ -1,7 +1,7 @@
 github.com/J-Siu/basetype v0.0.1 h1:DBnsXRNsiv5KjUICUV8PpmM2jAfUbbm20IXpXuVBjZA=
 github.com/J-Siu/basetype v0.0.1/go.mod h1:7LIiJSWFNIS9Ke2ZxevtpKTynbBWH/zyNn58Jj/fd0Q=
-github.com/J-Siu/ezlog v0.0.1 h1:vpamMqzpzDpMQ3ysEODnVKeT6tlShajE2u8uJmbZyKU=
-github.com/J-Siu/ezlog v0.0.1/go.mod h1:WxwcuSyDd5CfC3NuznDNBxetqnfWpFg2a8Mec0zmwBM=
+github.com/J-Siu/ezlog v0.0.4 h1:p+p5Ecp3V5RQDhYOeLC0qMLcb4pe56pEWovo4i/7+so=
+github.com/J-Siu/ezlog v0.0.4/go.mod h1:WxwcuSyDd5CfC3NuznDNBxetqnfWpFg2a8Mec0zmwBM=
 github.com/go-rod/rod v0.116.2 h1:A5t2Ky2A+5eD/ZJQr1EfsQSe5rms5Xof/qj296e+ZqA=
 github.com/go-rod/rod v0.116.2/go.mod h1:H+CMO9SCNc2TJ2WfrG+pKhITz57uGNYU43qYHh438Mg=
 github.com/ysmood/fetchup v0.2.3 h1:ulX+SonA0Vma5zUFXtv52Kzip/xe7aj4vqT5AJwQ+ZQ=

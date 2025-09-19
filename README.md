@@ -9,6 +9,8 @@ A Single Page App processor using [go-rod/rod](https://github.com/go-rod/rod)
 - v0.0.2
   - cleanup
   - ScrollOffset use float64
+- v0.0.3
+  - update ezlog
 
 ### License
 
